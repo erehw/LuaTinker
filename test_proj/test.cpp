@@ -11,14 +11,31 @@ int sample4 ( );
 int sample5 ( );
 int sample6 ( );
 
+#include <lua.hpp>
+#include "lua_tinker.h"
 int _tmain ( int argc, _TCHAR* argv[] )
 {
-   sample1 ( );
-   sample2 ( );
-   sample3 ( );
-   sample4 ( );
-   sample5 ( );
-   sample6();
+
+
+   lua_State* L = luaL_newstate();
+
+   luaopen_base(L);
+   lua_tinker::def(L,"sample1",sample1);
+   lua_tinker::def(L,"sample2",sample2);
+   lua_tinker::def(L,"sample3",sample3);
+   lua_tinker::def(L,"sample4",sample4);
+   lua_tinker::def(L,"sample5",sample5);
+   lua_tinker::def(L,"sample6",sample6);
+
+   // 设置全局变量
+
+   // 执行脚本
+   lua_tinker::dofile ( L, "samples.lua" );
+
+   lua_tinker::call<int> ( L, "run" );
+
+   lua_close ( L );
+
    return 0;
 }
 

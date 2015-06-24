@@ -32,7 +32,7 @@ int sample1()
 
     luaopen_base(L);
 
-    uint64_t task_id = 120;
+    uint64_t task_id = 12000000000000000ll;
     uint64_t task_id2 = -1;
     uint64_t task_id3 = -2;
     int rand_id = 123;

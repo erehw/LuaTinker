@@ -16,9 +16,9 @@ int sample2()
     lua_tinker::dofile(L, "sample2.lua");
 
     // 获取lua变量值
-    int lua_int = lua_tinker::get<int>(L, "lua_int");
+    auto lua_int = lua_tinker::get<long long>(L, "lua_int");
 
-    printf("lua_int = %d\n", lua_int);
+    printf("lua_int = %lld\n", lua_int);
 
     lua_close(L);
 

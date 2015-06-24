@@ -2,22 +2,22 @@
 
 --print(inspect(_G))
 
---print(g_test._test)
+print(g_test._test)
 
---print(g_test:is_test())
+print(g_test:is_test())
 
---print(g_test:ret_int())
+print(g_test:ret_int())
 
---temp = test(4)
---print("temp ctor")
+temp = test(4)
+print("temp ctor")
 
---print(temp._test)
+print(temp._test)
 
---a = g_test:get()
---print("a ctor")
+a = g_test:get()
+print("a ctor")
 
 
---temp:set(a)
+temp:set(a)
 
 --print(temp._test)
 
