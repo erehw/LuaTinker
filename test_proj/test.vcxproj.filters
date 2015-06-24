@@ -239,6 +239,9 @@
     <ClCompile Include="sample5.cpp">
       <Filter>samples</Filter>
     </ClCompile>
+    <ClCompile Include="sample6.cpp">
+      <Filter>samples</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\lua\Makefile">
@@ -257,6 +260,9 @@
       <Filter>samples</Filter>
     </None>
     <None Include="sample5.lua">
+      <Filter>samples</Filter>
+    </None>
+    <None Include="sample6.lua">
       <Filter>samples</Filter>
     </None>
   </ItemGroup>

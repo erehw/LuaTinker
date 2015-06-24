@@ -151,6 +151,7 @@
     <ClCompile Include="sample3.cpp" />
     <ClCompile Include="sample4.cpp" />
     <ClCompile Include="sample5.cpp" />
+    <ClCompile Include="sample6.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
@@ -161,6 +162,7 @@
     <None Include="sample3.lua" />
     <None Include="sample4.lua" />
     <None Include="sample5.lua" />
+    <None Include="sample6.lua" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

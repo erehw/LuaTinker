@@ -36,7 +36,7 @@ public:
     }
 };
 
-int main()
+int sample6()
 {
     lua_State* L = luaL_newstate();
 
@@ -63,19 +63,19 @@ int main()
 
     lua_getglobal(L, "ThreadTest");
 
-    printf("* lua_resume() 호출\n");
+    printf("* lua_resume() called\n");
     lua_resume(L, L, 0);
 
-    printf("* lua_resume() 호출\n");
+    printf("* lua_resume() called\n");
     lua_resume(L, L, 0);
 
-    printf("* lua_resume() 호출\n");
+    printf("* lua_resume() called\n");
     lua_resume(L, L, 0);
 
-    printf("* lua_resume() 호출\n");
+    printf("* lua_resume() called\n");
     lua_resume(L, L, 0);
 
-    printf("* lua_resume() 호출\n");
+    printf("* lua_resume() called\n");
     lua_resume(L, L, 0);
 
     lua_close(L);

@@ -14,12 +14,11 @@ int sample6 ( );
 int _tmain ( int argc, _TCHAR* argv[] )
 {
    sample1 ( );
-   return 1;
    sample2 ( );
    sample3 ( );
    sample4 ( );
    sample5 ( );
-   //sample6();
+   sample6();
    return 0;
 }
 
